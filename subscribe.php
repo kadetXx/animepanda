@@ -1,8 +1,7 @@
 <?php
 
   $email = $_POST['email'];
-  $location = 'Nigeria';
-  $deciveType = 'Mobile';
+  $deciveType = $_COOKIE["device"];
 
   //database connection
 
@@ -12,7 +11,7 @@
     die("ERROR: Could not connect to db. " . $mysqli->connect_error);
   } else {
 
-    $sql = "INSERT INTO subscribers (email, location, deviceType) VALUES ('$email', '$location', '$deciveType')";
+    $sql = "INSERT INTO subscribers (email, deviceType) VALUES ('$email', '$deciveType')";
   
     if($mysqli->query($sql) === true){
       echo "Records inserted successfully.";
