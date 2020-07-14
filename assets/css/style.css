@@ -72,11 +72,20 @@ body {
   scrollbar-width: none;
   /* Firefox */
   overflow-y: -moz-scrollbars-none;
+  /* Change the white to any color ;) */
 }
 
 body::-webkit-scrollbar {
   display: none;
   /* Safari and Chrome */
+}
+
+body input:-webkit-autofill,
+body input:-webkit-autofill:hover,
+body input:-webkit-autofill:focus,
+body input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 p {

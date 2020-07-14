@@ -21,8 +21,6 @@
     }
  
     // Close connection
-    $mysqli->close();
-    
+    $mysqli->close(); 
   }
-
 ?>

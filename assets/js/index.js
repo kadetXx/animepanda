@@ -7,7 +7,7 @@ $(function() {
           type: 'POST',
           url: 'subscribe.php',
           data: $(this).serialize(),
-      });
+      }).then(res => alert('success'));
   }); 
 })
 
