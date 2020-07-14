@@ -133,7 +133,7 @@ header {
   display: flex;
   flex-direction: column;
   right: 7%;
-  bottom: 3%;
+  bottom: 5%;
   z-index: 1;
 
   &__btn {
@@ -267,6 +267,7 @@ header {
             overflow: hidden;
             background-color: transparent;
             padding: 7px 10px 7px 20px;
+            background-color: #fff;
 
           }
 
@@ -276,6 +277,7 @@ header {
             border: none;
             background-color: #fff;
             box-shadow: none;
+            border-radius: 45px;
             // font-size: 14px;
 
             &::placeholder {
@@ -295,6 +297,10 @@ header {
             background-color: $primary-color;
             color: $light;
             border-radius: 45px;
+
+            &:focus {
+              outline: none;
+            }
           }
         }
       }
@@ -317,28 +323,124 @@ header {
 
 #second {
   @include set-background(#fff);
-  // $bg-color: $dark;
-  // background-color: $bg-color;
-
-  .features {
+  
+  .showcase {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;;
     height: 100%;
 
-    .feature {
+    &__header {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;
-      width: 25%;
-      // padding: 7% 2%;
+      justify-content: center;
+      margin-bottom: 40px;
 
-      img {
-        width: 60%;
-        max-width: 80%;
-        margin-bottom: 2rem;
+      h2 {
+        font-size: 35px;
+        padding: 0% 7%;
       }
+
+      p {
+        text-align: center;
+        padding: 0 20%;
+      }
+    }
+
+    .display {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+      width: 100%;
+
+      .tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 40%;
+        padding: 0 5%;
+
+        .tab {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding: 7%;
+          margin: 5% 0;
+          border-radius: 20px;
+          box-shadow: 0 0 7px 0.2px rgba(0, 0, 0, 0.137);
+          cursor: pointer;
+          user-select: none;
+
+          &__sn {
+            margin-right: 10px;
+            color: $primary-color;
+            cursor: pointer;
+            user-select: none;
+          }
+
+          &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            cursor: pointer;
+            user-select: none;
+
+            h2 {
+              font-weight: 500;
+              font-size: 20px;
+              margin-bottom: 1rem;
+            }
+
+            p {
+              color: #83858a;;
+            }
+
+          }
+
+        }
+
+        .tab--active {
+          background-color: $primary-color;
+          color: #fff;
+
+          .tab__sn {
+            color: #fff;
+          }
+
+          .tab__content {
+            p {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .screens {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 3% 0;
+
+        .screen__container {
+          height: 90%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 90%;
+            max-width: 90%;
+          }
+        }
+      }
+
     }
   }
 }

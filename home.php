@@ -26,8 +26,8 @@
   <div class="scroll">
     <a href="#top" class="scroll__btn"></a>
     <a href="#second" class="scroll__btn"><div></div></a>
-    <a href="#top" class="scroll__btn"></a>
-    <a href="#top" class="scroll__btn"></a>
+    <a href="#third" class="scroll__btn"></a>
+    <!-- <a href="#top" class="scroll__btn"></a> -->
   </div>
 
   <section id="top" class="panel">
@@ -64,21 +64,46 @@
         </div>
       </div>
     </div>
+
+    <img src="assets/img/topimage.png" alt="" class="hero__image">
   </section>
 
   <section id="second" class="panel">
-    <div class="features">
-      <div class="feature">
-        <img src="assets/img/undraw_drone_surveillance_kjjg.svg" alt="">
-        <h3>Super real</h3>
+    <div class="showcase">
+      <div class="showcase__header">
+        <h2>How It Works</h2>
+        <p>We have provided a fully automated software solution for anime lovers, video ad makers, movie script writers, Vlogers and the general public at large</p>
       </div>
-      <div class="feature">
-        <img src="assets/img/undraw_video_game_day.svg" alt="">
-        <h3>Console Grip</h3>
-      </div>
-      <div class="feature">
-        <img src="assets/img/undraw_futuristic_interface_4q3p.svg" alt="">
-        <h3>The future</h3>
+
+      <div class="display">
+        <div class="tabs">
+          <div class="tab tab--active">
+            <div class="tab__sn"><h3>1.</h3></div>
+            <div class="tab__content">
+              <h2>Sign Up</h2>
+              <p>One click sign up with google, apple, or microsoft</p>
+            </div>
+          </div>
+          <div class="tab">
+          <div class="tab__sn"><h3>2.</h3></div>
+            <div class="tab__content">
+              <h2>Submit story</h2>
+              <p>Write text or add google doc/evernote link</p>
+            </div>
+          </div>
+          <div class="tab">
+          <div class="tab__sn"><h3>3.</h3></div>
+            <div class="tab__content">
+              <h2>Select Character Type</h2>
+              <p>One click sign up with google, apple, or microsoft</p>
+            </div>
+          </div>
+        </div>
+        <div class="screens">
+          <div class="screen__container">
+            <img src="assets/img/tabimg.png" alt="" class="screen">
+          </div>
+        </div>
       </div>
     </div>
   </section>
