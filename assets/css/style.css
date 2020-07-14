@@ -521,7 +521,7 @@ header .menu-btn__bar:nth-child(2) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 5rem;
 }
 
 #second .showcase__header h2 {
@@ -563,8 +563,8 @@ header .menu-btn__bar:nth-child(2) {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  width: 40%;
-  padding: 0 5%;
+  width: 30%;
+  padding: 0 2%;
 }
 
 #second .showcase .display .tabs .tab {
@@ -576,7 +576,7 @@ header .menu-btn__bar:nth-child(2) {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 7%;
-  margin: 5% 0;
+  margin: 7% 0;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 7px 0.2px rgba(0, 0, 0, 0.137);
           box-shadow: 0 0 7px 0.2px rgba(0, 0, 0, 0.137);
@@ -620,21 +620,33 @@ header .menu-btn__bar:nth-child(2) {
 
 #second .showcase .display .tabs .tab__content h2 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 1rem;
+  -webkit-columns: #051441;
+          columns: #051441;
+  opacity: 0.8;
 }
 
 #second .showcase .display .tabs .tab__content p {
   color: #83858a;
+  font-size: 14px;
 }
 
 #second .showcase .display .tabs .tab--active {
   background-color: #6754e2;
   color: #fff;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;
+  -webkit-box-shadow: 0 0 7px 0.2px rgba(0, 0, 0, 0.479);
+          box-shadow: 0 0 7px 0.2px rgba(0, 0, 0, 0.479);
 }
 
 #second .showcase .display .tabs .tab--active .tab__sn {
   color: #fff;
+}
+
+#second .showcase .display .tabs .tab--active .tab__content h2 {
+  opacity: 1;
 }
 
 #second .showcase .display .tabs .tab--active .tab__content p {
@@ -642,7 +654,7 @@ header .menu-btn__bar:nth-child(2) {
 }
 
 #second .showcase .display .screens {
-  width: 60%;
+  width: 40%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,7 +666,7 @@ header .menu-btn__bar:nth-child(2) {
 }
 
 #second .showcase .display .screens .screen__container {
-  height: 90%;
+  height: 50%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -665,6 +677,6 @@ header .menu-btn__bar:nth-child(2) {
 }
 
 #second .showcase .display .screens .screen__container img {
-  width: 90%;
-  max-width: 90%;
+  width: 60%;
+  max-width: 60%;
 }

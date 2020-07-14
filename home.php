@@ -52,7 +52,7 @@
                 </label>
               </div>
             </form>
-            <small>Get early access when we launch</small>
+            <small>Be the first to find out when we launch</small>
           </div>
         </div>
   
@@ -72,7 +72,7 @@
     <div class="showcase">
       <div class="showcase__header">
         <h2>How It Works</h2>
-        <p>We have provided a fully automated software solution for anime lovers, video ad makers, movie script writers, Vlogers and the general public at large</p>
+        <p>We have provided a fully automated software solution for anime lovers, marketers, writers, cartoonists and Vloggers to make awesome video animations</p>
       </div>
 
       <div class="display">
@@ -80,28 +80,52 @@
           <div class="tab tab--active">
             <div class="tab__sn"><h3>1.</h3></div>
             <div class="tab__content">
-              <h2>Sign Up</h2>
+              <h2>Create Account</h2>
               <p>One click sign up with google, apple, or microsoft</p>
             </div>
           </div>
           <div class="tab">
           <div class="tab__sn"><h3>2.</h3></div>
             <div class="tab__content">
-              <h2>Submit story</h2>
-              <p>Write text or add google doc/evernote link</p>
+              <h2>Setup Profile</h2>
+              <p>Add account preferences and profile details</p>
             </div>
           </div>
           <div class="tab">
           <div class="tab__sn"><h3>3.</h3></div>
             <div class="tab__content">
-              <h2>Select Character Type</h2>
-              <p>One click sign up with google, apple, or microsoft</p>
+              <h2>Submit story</h2>
+              <p>Write text or add google doc/evernote link</p>
             </div>
           </div>
         </div>
         <div class="screens">
           <div class="screen__container">
-            <img src="assets/img/tabimg.png" alt="" class="screen">
+            <img src="assets/img/single-mock-screen.png" alt="" class="screen">
+          </div>
+        </div>
+
+        <div class="tabs">
+          <div class="tab">
+            <div class="tab__sn"><h3>6.</h3></div>
+            <div class="tab__content">
+              <h2>Export & Share</h2>
+              <p>Share your animation with the community or export!</p>
+            </div>
+          </div>
+          <div class="tab">
+          <div class="tab__sn"><h3>5.</h3></div>
+            <div class="tab__content">
+              <h2>Choose Format</h2>
+              <p>Videos are rendered in 8K HD for all formats</p>
+            </div>
+          </div>
+          <div class="tab">
+          <div class="tab__sn"><h3>4.</h3></div>
+            <div class="tab__content">
+              <h2>Select Avatar Set</h2>
+              <p>Doodle, anime, illustration, 3D, cartoon and more!</p>
+            </div>
           </div>
         </div>
       </div>
