@@ -28,9 +28,6 @@
     <a href="#second" class="scroll__btn"><div></div></a>
     <a href="#top" class="scroll__btn"></a>
     <a href="#top" class="scroll__btn"></a>
-    <!-- <div class="scroll__btn scroll__btn--current"></div> -->
-    <!-- <div class="scroll__btn"></div>
-    <div class="scroll__btn"></div> -->
   </div>
 
   <section id="top" class="panel">
@@ -39,10 +36,10 @@
       <div class="hero__left">
         <div class="hero__left__text-container">
           <h1 class="hero__left__text--big">
-            Convert written stories to Animated videos!
+            Convert written stories to <br> <b>Animated </b> videos!
           </h1>
           <p class="hero__left__text--small">
-            Have you ever thought of making your own anime? Or maybe you want to make a quick video ad but don't know how to use the numerous video editing apps? AnimePanda is a user friendly software that automatically converts written text/stories into animated movies in simple steps</div>
+            Ever thought of making your own animated movies? AnimePanda is a user friendly software that automatically converts written text/stories into animated movies in simple steps</div>
         
         <div class="hero__right">
           <!-- <img src="./assets/img/undraw_videographer_nnc7.svg" alt="game" class="hero__right__img"> -->
@@ -66,20 +63,6 @@
           <i class="fab fa-dribbble"></i>
         </div>
       </div>
-
-      <!-- <div class="hero__right"> -->
-        <!-- <img src="./assets/img/undraw_videographer_nnc7.svg" alt="game" class="hero__right__img"> -->
-        <!-- <div class="form-box">
-          <form action="" id="early-bird">
-            <div class="form-group">
-              <label for="email">
-                <input type="email" id="email">
-                <input type="submit" value="Notify me" id="submit">
-              </label>
-            </div>
-          </form>
-        </div>
-      </div> -->
     </div>
   </section>
 

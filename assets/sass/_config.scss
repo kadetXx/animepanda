@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Piedra&family=Roboto:wght@300;400;500;700;900&family=Sacramento&family=Tangerine:wght@400;700&display=swap');
 
-$light-pink: #f5efed;
-$default-font: 'Roboto', sans-serif; //'Oswald', sans-serif;;
-$primary-color: #383e56;
-$secondary-color: #d4b5b0; //#f69e7b;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$light: #FAFAFE;
+$dark: #051441;
+$primary-color: #6754e2; //#f69e7b;
+
+$default-font: 'Poppins', sans-serif;
 
 //set text color function
 

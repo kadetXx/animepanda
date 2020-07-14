@@ -1,6 +1,7 @@
 @import 'config';
 @import 'utilities';
 @import 'buttons';
+@import 'floats';
 
 * {
   box-sizing: border-box;
@@ -14,7 +15,7 @@ html body {
 
 body {
   font-family: $default-font;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  -ms-overflow-style: none; 
   scrollbar-width: none;  /* Firefox */
   overflow-y: -moz-scrollbars-none;
 
@@ -22,6 +23,10 @@ body {
     display: none;  /* Safari and Chrome */
   }
     
+}
+
+p {
+  color: #4B505E;
 }
 
 a {
@@ -43,7 +48,6 @@ header {
   align-items: center;
   margin-top: 3vh;
   margin-bottom: 1vh;
-  // transform: scaleY(0);
   transform: translateY(-200px);
   z-index: 1;
   opacity: 0;
@@ -53,17 +57,16 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-family: 'Tangerine', cursive; //'Piedra', cursive;//'Sacramento', cursive;
+    font-family: 'Tangerine', cursive;
     font-size: 27px;
     height: 100%;
   }
 
   a {
-    color: $primary-color;
-    // color: set-text-color($bg-color);
-
+    color: $dark;
+  
     &:hover {
-      color: #f69e7b;
+      color: $primary-color
     }
 
     h2 {
@@ -112,7 +115,7 @@ header {
     &__bar {
       height: 2px;
       width: 70%;
-      background-color: $primary-color;
+      background-color: $dark;
       margin-top: 7%;
       margin-bottom: 7%;
 
@@ -137,7 +140,7 @@ header {
   &__btn {
     height: 7px;
     width: 7px;
-    background-color: $primary-color;
+    background-color: $dark;
     margin: 0.5rem;
     transform: rotate(45deg);
     cursor: pointer;
@@ -146,7 +149,7 @@ header {
       border-radius: 100%;
       transform: scale(1.4);
       background-color: transparent;
-      border: 1px solid $primary-color;
+      border: 1px solid $dark;
       box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.24);
     }
 
@@ -158,11 +161,11 @@ header {
 
 .scroll--light {
   .scroll__btn {
-    background-color: $secondary-color;
+    background-color: $primary-color;
 
     &--current {
       background-color: transparent;
-      border: 1px solid $secondary-color;
+      border: 1px solid $primary-color;
       box-shadow: 0px 0px 2px 3px #d4b5b011;
     }
 
@@ -173,13 +176,11 @@ header {
 }
 
 #top {
-  @include set-background($light-pink);
+  @include set-background($light);
   scroll-behavior: smooth;
   scroll-snap-type: proximity;
-  // transform: translateY(-2000px);
-  // $bg-color: $light-pink;
-  // background-color: $bg-color;
-  
+  position: relative;
+
   .hero {
     display: flex;
     justify-content: space-between;
@@ -191,11 +192,8 @@ header {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      // align-items: flex-start;
       height: 100%;
       width: 100%;
-      // width: 50%;
-      // padding-top: 6%;
       z-index: 1;
   
       &__text-container {
@@ -203,23 +201,22 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // margin-top: -10%;
-        
+        padding: 1% 15%;
   
         h1 {
           text-align: center;
           font-size: 45px;
+          font-weight: 500;
           margin-bottom: 1.2rem;
-          font-family: 'Piedra', cursive;
+          // font-family: 'Piedra', cursive;
         }
   
         p {
           text-align: center;
-          padding: 1% 10%;
-          // padding-right: 7%;
-          line-height: 1.7;
-          margin: 0.2rem 0 1rem;
-          color: lighten($color: $primary-color, $amount: 20);
+          line-height: 30px;
+          font-weight: 300;
+          margin: 0 0 1rem;
+          font-size: 18px;
         }
   
         .hero__btn {
@@ -238,20 +235,6 @@ header {
       z-index: 1;
       position: relative;
 
-      &::before {
-        content: "";
-        background: url(/assets/img/undraw_videographer_nnc7.svg);
-        background-size: cover;
-        position: absolute;
-        background-position: center;
-        background-repeat: no-repeat;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        opacity: 0.02;
-      }
-
       .form-box {
         display: flex;
         flex-direction: column;
@@ -263,7 +246,7 @@ header {
         padding: 0;
 
         form {
-          width: 80%;
+          width: 90%;
           display: flex;
           justify-content: center;
           margin-bottom: 0.4rem;
@@ -279,22 +262,24 @@ header {
             display: flex;
             justify-content: center;
             width: 100%;
-            border: 1px solid $primary-color;
-            border-radius: 30px;
+            border: 1px solid #e1e1e1;
+            border-radius: 45px;
             overflow: hidden;
             background-color: transparent;
+            padding: 5px 10px 5px 20px;
           }
 
           #email {
             width: 70%;
             padding: 0.7rem 1rem;
             border: none;
-            background-color: transparent;
+            background-color: #fff;
+            box-shadow: none;
             // font-size: 14px;
 
             &::placeholder {
               opacity: 0.5;
-              color: $primary-color;
+              color: $dark;
             }
 
             &:focus {
@@ -306,7 +291,8 @@ header {
             width: 30%;
             border: none;
             background-color: $primary-color;
-            color: $light-pink;
+            color: $light;
+            border-radius: 45px;
           }
         }
       }
@@ -328,8 +314,8 @@ header {
 }
 
 #second {
-  @include set-background($primary-color);
-  // $bg-color: $primary-color;
+  @include set-background(#fff);
+  // $bg-color: $dark;
   // background-color: $bg-color;
 
   .features {

@@ -10,3 +10,10 @@ section {
   // position: sticky;
   // top: 0;
 }
+
+%float {
+  position: absolute;
+  width: 150px;
+  max-width: 100%;
+  opacity: 0.06;
+}
