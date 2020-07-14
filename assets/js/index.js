@@ -41,5 +41,25 @@ tabs.forEach((tab, index) => {
       item.classList.remove('tab--active');
     })
     document.querySelectorAll('.tab')[index].classList.add('tab--active');
+
+   let images = [
+     'dashboard.png',
+     'create-story.png',
+     'creation.png',
+     'render.png',
+     'done-rendering.png'
+   ];
+
+   document.querySelector('.screen').setAttribute('src', `assets/img/${images[index]}`)
+ 
+  //  gsap.from('.screen', {duration:0.2, delay: 0.3, opacity: 0, ease: 'slow'});
+   gsap.to('.screen', {duration:0.7, delay: 0, y:10, ease: 'slow'});
+   gsap.to('.screen', {duration:0.7, delay: 0.7, y:0, ease: 'slow'});
   })
+})
+
+//footer 
+
+document.querySelector('.footer__button__container button').addEventListener('click', () => {
+  document.querySelector('#email').focus();
 })

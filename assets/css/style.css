@@ -103,7 +103,7 @@ img {
 
 header {
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 10vh;
   display: -webkit-box;
@@ -180,7 +180,6 @@ header .menu-btn__container {
   width: 50px;
   background-color: transparent;
   margin-right: 20%;
-  height: 100%;
 }
 
 header .menu-btn__container--open .menu-btn__bar:nth-child(1) {
@@ -228,8 +227,8 @@ header .menu-btn__bar:nth-child(2) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  right: 7%;
-  bottom: 5%;
+  right: 3%;
+  bottom: 40%;
   z-index: 1;
 }
 
@@ -475,6 +474,13 @@ header .menu-btn__bar:nth-child(2) {
   border-radius: 45px;
 }
 
+#top .hero__right .form-box .form-group #submit:hover {
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
 #top .hero__right .form-box .form-group #submit:focus {
   outline: none;
 }
@@ -688,4 +694,150 @@ header .menu-btn__bar:nth-child(2) {
 #second .showcase .display .screens .screen__container img {
   width: 60%;
   max-width: 60%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  background: #f6f6f8;
+  color: #051441;
+  padding: 7% 0 3rem;
+  -webkit-box-shadow: inset 0 -5.9rem 3px 0 #413C85;
+          box-shadow: inset 0 -5.9rem 3px 0 #413C85;
+}
+
+footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__container .footer__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 70%;
+}
+
+footer .footer__container .footer__cta .footer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer__container .footer__cta .footer__header h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+footer .footer__container .footer__cta .footer__header p {
+  padding: 0 2rem;
+}
+
+footer .footer__hero {
+  width: 100%;
+}
+
+footer .footer__hero img {
+  width: 98%;
+}
+
+footer .footer__button__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 2rem 2rem 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer__button__container button {
+  width: 85%;
+  border: none;
+  padding: 1.7rem;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #FAFAFE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+footer .footer__button__container button:focus {
+  outline: none;
+}
+
+footer .footer__button__container button p {
+  text-align: left;
+  width: 80%;
+  font-size: 18px;
+  color: #051441;
+  opacity: 0.7;
+}
+
+footer .footer__button__container button .footer__circle {
+  width: 4rem;
+  height: 4rem;
+  right: 2rem;
+  position: absolute;
+  background-color: #413C85;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__button__container button .footer__circle i {
+  font-size: 35px;
 }
