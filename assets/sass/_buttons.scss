@@ -1,0 +1,26 @@
+%btn {
+  border: 1px solid;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem 1rem 0.5rem 0;
+  border-radius: 10px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  a {
+    color: $primary-color;
+  }
+}
+
+.hero__btn--light {
+  @extend %btn;
+  background-color: #f69e7b;
+  border-color: #fd8251;
+
+}
+
+.hero__btn--dark {
+  @extend %btn;
+  border-color: #fff;
+}

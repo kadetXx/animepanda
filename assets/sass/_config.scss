@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Piedra&family=Roboto:wght@300;400;500;700;900&family=Sacramento&family=Tangerine:wght@400;700&display=swap');
+
+$light-pink: #f5efed;
+$default-font: 'Roboto', sans-serif; //'Oswald', sans-serif;;
+$primary-color: #383e56;
+$secondary-color: #d4b5b0; //#f69e7b;
+
+//set text color function
+
+@function set-text-color($bg) {
+  @if (lightness($bg) > 70) {
+    @return #383e56;
+  } @else {
+     @return #eedad1;
+  }
+}
+
+//mixin
+
+@mixin set-background($bg-color) {
+  background-color: $bg-color;
+  color: set-text-color($bg-color);
+}
+
+//loop
+
+$spacing: (1,2,3,4,5);
+
+@each $space in $spacing {
+  .my-#{$space} {
+    margin: #{$space}rem;
+  }
+}
