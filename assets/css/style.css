@@ -431,6 +431,10 @@ header .menu-btn__bar:nth-child(2) {
   background-color: #fff;
 }
 
+#top .hero__right .form-box .form-group .label--active {
+  border-color: #6754e2;
+}
+
 #top .hero__right .form-box .form-group #email {
   width: 70%;
   padding: 0.7rem 1rem;
@@ -704,12 +708,13 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 100%;
   background: #f6f6f8;
   color: #051441;
-  padding: 7% 0 3rem;
-  -webkit-box-shadow: inset 0 -5.9rem 3px 0 #413C85;
-          box-shadow: inset 0 -5.9rem 3px 0 #413C85;
+  padding: 5% 0 0;
 }
 
 footer .footer__container {
@@ -772,11 +777,18 @@ footer .footer__container .footer__cta .footer__header p {
 }
 
 footer .footer__hero {
+  margin: 0;
+  padding: 0;
   width: 100%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 
 footer .footer__hero img {
-  width: 98%;
+  position: relative;
+  bottom: -10px;
+  width: 100%;
 }
 
 footer .footer__button__container {
@@ -804,6 +816,8 @@ footer .footer__button__container button {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.137);
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.137);
 }
 
 footer .footer__button__container button:focus {
