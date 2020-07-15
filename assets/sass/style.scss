@@ -1,7 +1,6 @@
 @import 'config';
 @import 'utilities';
 @import 'buttons';
-@import 'responsive';
 
 
 header {
@@ -291,7 +290,7 @@ header {
       margin-top: 1rem;
       z-index: 3;
   
-      .fab {
+      i {
         margin: 1rem;
         font-size: 40px;
       }
@@ -456,6 +455,8 @@ header {
           img {
             width: 60%;
             max-width: 60%;
+            position: relative;
+            right: -17px;
           }
         }
       }
@@ -590,3 +591,6 @@ footer {
   }
 }
 
+// responsive styling
+
+@import 'responsive';

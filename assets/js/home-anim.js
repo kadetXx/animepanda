@@ -23,19 +23,43 @@ $(document).ready(function(){
   document.querySelector('.scroll__btn:nth-child(1)').classList.add('scroll__btn--current')
 });
 
-
 //activate section scrollers
 
-let scrollBtn = document.querySelectorAll('.scroll__btn');
+window.addEventListener("scroll", function (e) {
 
-scrollBtn.forEach((btn) => {
-  btn.addEventListener('click', (e) => {
+  let scroll = this.scrollY;
+
+  if (scroll > 1600) {
     document.querySelectorAll('.scroll__btn').forEach((icon) => {
       icon.classList.remove('scroll__btn--current');
     })
-    e.target.classList.add('scroll__btn--current');
-  })
-})
+    document.querySelectorAll('.scroll__btn')[2].classList.add('scroll__btn--current');
+  } else if (scroll >= 700) {
+    document.querySelectorAll('.scroll__btn').forEach((icon) => {
+      icon.classList.remove('scroll__btn--current');
+    })
+    document.querySelectorAll('.scroll__btn')[1].classList.add('scroll__btn--current');
+  } else if (scroll >= 0 && scroll <= 500) {
+    document.querySelectorAll('.scroll__btn').forEach((icon) => {
+      icon.classList.remove('scroll__btn--current');
+    })
+    document.querySelectorAll('.scroll__btn')[0].classList.add('scroll__btn--current');
+  }
+});
+
+
+//activate section scrollers
+
+// let scrollBtn = document.querySelectorAll('.scroll__btn');
+
+// scrollBtn.forEach((btn) => {
+//   btn.addEventListener('click', (e) => {
+//     document.querySelectorAll('.scroll__btn').forEach((icon) => {
+//       icon.classList.remove('scroll__btn--current');
+//     })
+//     e.target.classList.add('scroll__btn--current');
+//   })
+// })
 
 
 //hamburger menu effects
@@ -71,11 +95,12 @@ tabs.forEach((tab, index) => {
     document.querySelectorAll('.tab')[index].classList.add('tab--active');
 
    let images = [
-     'dashboard.png',
+     'sign-up.png',
      'create-story.png',
-     'creation.png',
-     'render.png',
-     'done-rendering.png'
+     'select-avatar.png',
+     'dashboard.png',
+     'detail.png',
+     'rendering.png'
    ];
 
    document.querySelector('.screen').setAttribute('src', `assets/img/${images[index]}`)

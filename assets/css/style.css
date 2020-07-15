@@ -13,6 +13,15 @@ html body {
 
 body {
   font-family: "Poppins", sans-serif;
+  /* Change the white to any color ;) */
+}
+
+body input:-webkit-autofill,
+body input:-webkit-autofill:hover,
+body input:-webkit-autofill:focus,
+body input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 ::-webkit-scrollbar {
@@ -100,12 +109,6 @@ section {
 
 .hero__btn--dark {
   border-color: #fff;
-}
-
-@media (max-width: 900px) {
-  header {
-    position: relative;
-  }
 }
 
 header {
@@ -507,7 +510,7 @@ header .menu-btn__bar:nth-child(2) {
   z-index: 3;
 }
 
-#top .hero__social .fab {
+#top .hero__social i {
   margin: 1rem;
   font-size: 40px;
 }
@@ -759,6 +762,8 @@ header .menu-btn__bar:nth-child(2) {
 #second .showcase .display .screens .screen__container img {
   width: 60%;
   max-width: 60%;
+  position: relative;
+  right: -17px;
 }
 
 footer {
@@ -954,5 +959,149 @@ footer .footer__button__container button .footer__circle i {
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+}
+
+@media (max-width: 950px) {
+  body {
+    background-color: #FAFAFE;
+  }
+  header {
+    position: relative;
+    height: 4rem;
+    background-color: #FAFAFE;
+  }
+  header .menu-btn {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 10px;
+  }
+  header .menu-btn__container {
+    margin: 0;
+    width: 40px;
+  }
+  header .menu-btn__container .menu-btn__bar:nth-child(1) {
+    width: 40px;
+  }
+  header .menu-btn__container .menu-btn__bar:nth-child(2) {
+    width: 30px;
+  }
+  header .menu-btn__container--open .menu-btn__bar:nth-child(1) {
+    margin: 0;
+    width: 30px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: -webkit-transform .2s ease;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease;
+  }
+  header .menu-btn__container--open .menu-btn__bar:nth-child(2) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 0;
+    width: 30px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform .2s ease;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease;
+  }
+  .scroll {
+    display: none;
+  }
+  #top .hero__left__text-container {
+    padding: 1% 0%;
+  }
+  #top .hero__left__text-container h1 {
+    font-size: 24px;
+  }
+  #top .hero__left__text-container p {
+    font-size: 16px;
+  }
+  #top .hero__social {
+    margin: 0;
+  }
+  #top .hero__social i {
+    font-size: 27px;
+    margin: 1rem 0.5rem;
+  }
+  #top .hero__right {
+    width: 100%;
+  }
+  #second {
+    background-color: #fff;
+    padding: 10% 7%;
+  }
+  #second .showcase__header {
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  #second .showcase__header h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+  }
+  #second .showcase__header p {
+    padding: 1%;
+    color: #7b7d81;
+    font-size: 14px;
+  }
+  #second .showcase .display {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #second .showcase .display .tabs {
+    width: 15%;
+    margin-top: 2rem;
+  }
+  #second .showcase .display .tabs .tab {
+    margin: 1.4rem 0;
+    padding: 20px;
+  }
+  #second .showcase .display .tabs .tab__sn {
+    margin: 0;
+  }
+  #second .showcase .display .tabs .tab__sn span {
+    display: none;
+  }
+  #second .showcase .display .tabs .tab__content {
+    display: none;
+  }
+  #second .showcase .display .screens {
+    width: 70%;
+  }
+  #second .showcase .display .screens .screen__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+  }
+  #second .showcase .display .screens .screen__container img {
+    width: 90%;
+    max-width: 90%;
+  }
+  footer .footer__container .footer__cta {
+    width: 100%;
+    padding: 8% 0 0;
+  }
+  footer .footer__container .footer__cta .footer__header h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  footer .footer__container .footer__cta .footer__header p {
+    font-size: 14px;
+  }
+  __button__container button {
+    width: 95%;
+    padding: 1.5rem;
   }
 }
