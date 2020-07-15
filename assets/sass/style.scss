@@ -1,64 +1,20 @@
 @import 'config';
 @import 'utilities';
 @import 'buttons';
+@import 'responsive';
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html body {
-  height: auto;
-}
-
-body {
-  font-family: $default-font;
-  -ms-overflow-style: none; 
-  scrollbar-width: none;  /* Firefox */
-  overflow-y: -moz-scrollbars-none;
-
-  &::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-  }
-
-  /* Change the white to any color ;) */
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover, 
-  input:-webkit-autofill:focus, 
-  input:-webkit-autofill:active  {
-    box-shadow: 0 0 0 30px white inset !important;
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
-  }
-    
-}
-
-p {
-  color: #4B505E;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
-}
 
 header {
   @extend .container;
   background-color: transparent;
   position: absolute;
   width: 100%;
-  height: 10vh;
+  height: 62px;
   display: flex;
   align-items: center;
-  margin-top: 3vh;
-  margin-bottom: 1vh;
-  transform: translateY(-200px);
+  margin-top: 18.5px;
+  margin-bottom: 6.5px;
   z-index: 1;
-  opacity: 0;
 
   .logo-container {
     width: 70%;
@@ -188,6 +144,7 @@ header {
   scroll-behavior: smooth;
   scroll-snap-type: proximity;
   position: relative;
+  padding-bottom: 0;
 
   .hero {
     display: flex;
@@ -210,7 +167,9 @@ header {
         justify-content: center;
         align-items: center;
         padding: 1% 15%;
-  
+        background-color: $light;
+        z-index: 4;
+        
         h1 {
           text-align: center;
           font-size: 45px;
@@ -330,10 +289,43 @@ header {
       display: flex;
       justify-content: center;
       margin-top: 1rem;
+      z-index: 3;
   
       .fab {
         margin: 1rem;
         font-size: 40px;
+      }
+
+      i:nth-child(1):hover, i:nth-child(2):hover {
+        transform: rotate(10deg);
+      }
+
+      i:nth-child(3):hover, i:nth-child(4):hover {
+        transform: rotate(-10deg);
+      }
+    }
+  }
+
+  .hero__image {
+    &:hover {
+      animation: 2s linear 0s infinite running halo;
+    }
+
+    @keyframes halo {
+      25% {
+        transform: translateY(-3px);
+      }
+
+      50% {
+        transform: translateY(3px);
+      }
+
+      75% {
+        transform: translateY(6px);
+      }
+
+      100% {
+        transform: translateY(0);
       }
     }
   }
@@ -573,6 +565,25 @@ footer {
 
         i {
           font-size: 35px;
+          animation: 0.6s linear 0s infinite running pump;
+        }
+
+        @keyframes pump {
+          0% {
+            transform: translateY(0px);
+          }
+
+          25% {
+            transform: translateY(1px);
+          }
+
+          50% {
+            transform: translateY(-3px);
+          }
+
+          100% {
+            transform: translateY(0px);
+          }
         }
       }
     }

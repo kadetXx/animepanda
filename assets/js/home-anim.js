@@ -49,7 +49,7 @@ burger.addEventListener('click', (e) => {
 //form highlight 
 
 document.addEventListener('click', (e) => {
-  if (1 == 1) {
+  if (e.target.classList.contains('email')) {
     document.querySelector('label').classList.add('label--active')
   } else {
     document.querySelector('label').classList.remove('label--active')
@@ -97,7 +97,33 @@ document.querySelector('.footer__button__container button').addEventListener('cl
 
 // GSAP animations
 
-gsap.from('.hero', {duration:1, delay: 0.6, y:20, ease: 'slow'});
-gsap.from('.hero', {duration:3, delay: 0.6, opacity: 0, ease: 'slow'});
-gsap.to('header', {duration:1, y: 0, opacity: "1", delay: 3, ease: 'back'});
+gsap.from('.hero', {duration:1, delay: 0.6, y:20, ease: 'circ'});
+gsap.from('.hero', {duration:2, delay: 0.6, opacity: 0, ease: 'circ'});
+// gsap.from('label', {duration:1,  transform: "scale(0)", delay: 4, ease: 'circ'})
+gsap.from('label', {duration:1,  y:-100, delay: 2, ease: 'circ'})
+// gsap.from('header', {duration:1, y: -200, opacity: "0", delay: 2, ease: 'back'});
 gsap.from('.scroll', {duration:2,  opacity: 0, delay: 2.1, ease: 'back'})
+
+//scroll effects
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".tab-left", {
+  scrollTrigger: {
+    trigger: ".tab",
+    toggleActions: "restart none none none"
+  },
+  x: -100,
+  duration: 2,
+  stagger: Math.random()
+});
+
+gsap.from(".tab-right", {
+  scrollTrigger: {
+    trigger: ".tab",
+    toggleActions: "restart none none none"
+  },
+  x: 100,
+  duration: 2,
+  stagger: Math.random()
+});

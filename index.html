@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Sass Tester</title>
@@ -47,7 +48,7 @@
             <form id="early-bird">
               <div class="form-group">
                 <label for="email">
-                  <input type="email" id="email" placeholder="Enter your email..." name="email" required>
+                  <input type="email" id="email" placeholder="Enter your email..." name="email" required class="email">
                   <input type="submit" value="Notify me" id="submit">
                 </label>
               </div>
@@ -77,21 +78,21 @@
 
       <div class="display">
         <div class="tabs">
-          <div class="tab tab--active">
+          <div class="tab tab--active tab-left">
             <div class="tab__sn"><h3>1.</h3></div>
             <div class="tab__content">
               <h2>Create Account</h2>
               <p>One click sign up with google, apple, or microsoft</p>
             </div>
           </div>
-          <div class="tab">
+          <div class="tab tab-left">
           <div class="tab__sn"><h3>2.</h3></div>
             <div class="tab__content">
               <h2>Setup Profile</h2>
               <p>Add account preferences and profile details</p>
             </div>
           </div>
-          <div class="tab">
+          <div class="tab tab-left">
           <div class="tab__sn"><h3>3.</h3></div>
             <div class="tab__content">
               <h2>Submit story</h2>
@@ -106,21 +107,21 @@
         </div>
 
         <div class="tabs">
-          <div class="tab">
+          <div class="tab tab-right">
             <div class="tab__sn"><h3>6.</h3></div>
             <div class="tab__content">
               <h2>Export & Share</h2>
               <p>Share your animation with the community or export!</p>
             </div>
           </div>
-          <div class="tab">
+          <div class="tab tab-right">
           <div class="tab__sn"><h3>5.</h3></div>
             <div class="tab__content">
               <h2>Choose Format</h2>
               <p>Videos are rendered in 8K HD for all formats</p>
             </div>
           </div>
-          <div class="tab">
+          <div class="tab tab-right">
           <div class="tab__sn"><h3>4.</h3></div>
             <div class="tab__content">
               <h2>Select Avatar Set</h2>
@@ -141,7 +142,7 @@
         </div>
 
         <div class="footer__button__container">
-          <button>
+          <button class="email">
             <p>Yes! Sign Me Up!</p>
             <div class="footer__circle"><i class="fas fa-arrow-up"></i></div>
           </button>
@@ -154,8 +155,10 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.js"></script>
   <script type="text/javascript" src="assets/js/home-anim.js"></script>
   <script type="text/javascript" src="assets/js/index.js"></script>
 </body>

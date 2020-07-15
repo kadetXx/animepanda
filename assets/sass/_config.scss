@@ -8,6 +8,72 @@ $primary-color: #6754e2; //#f69e7b;
 
 $default-font: 'Poppins', sans-serif;
 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html body {
+  height: auto;
+}
+
+body {
+  font-family: $default-font;
+  // -ms-overflow-style: none; 
+  // scrollbar-width: none;  /* Firefox */
+  // overflow-y: -moz-scrollbars-none;
+
+  // &::-webkit-scrollbar { 
+  //   display: none;  /* Safari and Chrome */
+  // }
+
+  // /* Change the white to any color ;) */
+  // input:-webkit-autofill,
+  // input:-webkit-autofill:hover, 
+  // input:-webkit-autofill:focus, 
+  // input:-webkit-autofill:active  {
+  //   box-shadow: 0 0 0 30px white inset !important;
+  // -webkit-box-shadow: 0 0 0 30px white inset !important;
+  // } 
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $light; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+p {
+  color: #4B505E;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+
+
 //set text color function
 
 @function set-text-color($bg) {
