@@ -269,25 +269,71 @@ header {
             color: $light;
             border-radius: 45px;
 
-            &:hover {
-              animation: 0.2s linear 0s infinite running shake;
-            }
+            // &:hover {
+            //   animation: 0.4s linear 0s infinite running shake;
+            // }
 
-            @keyframes shake {
-              from {
-                transform: scaleX(1.1);
-              }
+            // @keyframes shake {
+            //   25% {
+            //     transform: rotate(1deg);
+            //   }
 
-              to {
-                transform: scaleX(1);
-              }
-            }
+            //   50% {
+            //     transform: rotate(0deg);
+            //   }
+
+            //   75% {
+            //     transform: rotate(-1deg);
+            //   }
+
+            //   100% {
+            //     transform: rotate(0deg);
+            //   }
+            // }
 
             &:focus {
               outline: none;
             }
           }
 
+          .dance {
+            animation: 0.4s linear 0s infinite running shake;
+
+            @keyframes shake {
+              25% {
+                transform: rotate(1deg);
+              }
+
+              50% {
+                transform: rotate(0deg);
+              }
+
+              75% {
+                transform: rotate(-1deg);
+              }
+
+              100% {
+                transform: rotate(0deg);
+              }
+            }
+          }
+
+          .loader {
+            width: 30%;
+            height: 100%;
+            border: none;
+            background-color: #F0F0FC;
+            color: $light;
+            border-radius: 45px;
+            overflow: hidden;
+            display: none;
+
+            img {
+              max-width: 70%;
+              width: 60%;
+              text-align: center;
+            }
+          }
         }
       }
 

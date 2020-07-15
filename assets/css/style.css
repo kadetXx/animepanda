@@ -488,35 +488,68 @@ header .menu-btn__bar:nth-child(2) {
   border-radius: 45px;
 }
 
-#top .hero__right .form-box .form-group #submit:hover {
-  -webkit-animation: 0.2s linear 0s infinite running shake;
-          animation: 0.2s linear 0s infinite running shake;
+#top .hero__right .form-box .form-group #submit:focus {
+  outline: none;
+}
+
+#top .hero__right .form-box .form-group .dance {
+  -webkit-animation: 0.4s linear 0s infinite running shake;
+          animation: 0.4s linear 0s infinite running shake;
 }
 
 @-webkit-keyframes shake {
-  from {
-    -webkit-transform: scaleX(1.1);
-            transform: scaleX(1.1);
+  25% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
   }
-  to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
 @keyframes shake {
-  from {
-    -webkit-transform: scaleX(1.1);
-            transform: scaleX(1.1);
+  25% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
   }
-  to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
-#top .hero__right .form-box .form-group #submit:focus {
-  outline: none;
+#top .hero__right .form-box .form-group .loader {
+  width: 30%;
+  height: 100%;
+  border: none;
+  background-color: #F0F0FC;
+  color: #FAFAFE;
+  border-radius: 45px;
+  overflow: hidden;
+  display: none;
+}
+
+#top .hero__right .form-box .form-group .loader img {
+  max-width: 70%;
+  width: 60%;
+  text-align: center;
 }
 
 #top .hero__right .swoosh {

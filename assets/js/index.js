@@ -2,12 +2,21 @@
 
 $(function() {
   $('form').submit(function(e) {
+
+    $('#submit').hide()
+    $('.loader').show()
+
     e.preventDefault()
       $.ajax({
           type: 'POST',
           url: 'subscribe.php',
           data: $(this).serialize(),
-      }).then(res => alert('success'));
+      }).then(() => {
+        $('.loader').hide();
+        $('#submit').show()
+        document.querySelector('#email').value = '';
+        swal("Opt in successful!", "Your email is now in our waiting list!", "success")
+      });
   }); 
 })
 

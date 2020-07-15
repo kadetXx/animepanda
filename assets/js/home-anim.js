@@ -75,12 +75,14 @@ burger.addEventListener('click', (e) => {
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('email')) {
     document.querySelector('label').classList.add('label--active')
+    document.querySelector('#submit').classList.add('dance')
   } else {
     document.querySelector('label').classList.remove('label--active')
+    document.querySelector('#submit').classList.remove('dance')
   }
 })
 
-
+console.log($('.email').value)
 
 
 //display tabs
