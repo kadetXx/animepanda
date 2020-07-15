@@ -489,14 +489,40 @@ header .menu-btn__bar:nth-child(2) {
 }
 
 #top .hero__right .form-box .form-group #submit:hover {
-  -webkit-transform: scaleX(1.1);
-          transform: scaleX(1.1);
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  -webkit-animation: 0.2s linear 0s infinite running shake;
+          animation: 0.2s linear 0s infinite running shake;
+}
+
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes shake {
+  from {
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 
 #top .hero__right .form-box .form-group #submit:focus {
   outline: none;
+}
+
+#top .hero__right .swoosh {
+  color: green;
+  -webkit-transition: display 0.2s ease-in-out;
+  transition: display 0.2s ease-in-out;
 }
 
 #top .hero__social {
@@ -920,8 +946,8 @@ footer .footer__button__container button .footer__circle {
 
 footer .footer__button__container button .footer__circle i {
   font-size: 35px;
-  -webkit-animation: 0.6s linear 0s infinite running pump;
-          animation: 0.6s linear 0s infinite running pump;
+  -webkit-animation: 0.6s linear 0s 2 running pump;
+          animation: 0.6s linear 0s 2 running pump;
 }
 
 @-webkit-keyframes pump {
