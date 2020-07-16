@@ -51,10 +51,9 @@ header {
       align-items: flex-end;
       height: 50px;
       width: 50px;
-      // border-radius: 100%;
       background-color: transparent;
       margin-right: 20%;
-      // height: 100%;
+      z-index: 10000;
     }
 
     &__container--open  {
@@ -87,7 +86,55 @@ header {
       }
     }
 
-    
+    .devs {
+      display: none;
+    }
+
+    .devs--active {
+      position: absolute;
+      padding: 0.4rem 1%;
+      margin-left: 20px;
+      background-color: $light;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+
+      div {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h5 {
+          margin: 0 15px 0 5px;
+        }
+
+        i {
+          text-align: center; 
+          font-size: 35px;
+          color: #413C85;
+        }
+      }
+    }
+
+    @keyframes view {
+      from {
+       width: 0;
+       opacity: -5;
+       transform: scaleY(0)
+      };
+
+      to {
+        height: auto;
+        width: 70%;
+        opacity: 1;
+        transform: scaleY(1)
+      }
+
+      
+    }
   }
 
 }
@@ -268,28 +315,6 @@ header {
             background-color: $primary-color;
             color: $light;
             border-radius: 45px;
-
-            // &:hover {
-            //   animation: 0.4s linear 0s infinite running shake;
-            // }
-
-            // @keyframes shake {
-            //   25% {
-            //     transform: rotate(1deg);
-            //   }
-
-            //   50% {
-            //     transform: rotate(0deg);
-            //   }
-
-            //   75% {
-            //     transform: rotate(-1deg);
-            //   }
-
-            //   100% {
-            //     transform: rotate(0deg);
-            //   }
-            // }
 
             &:focus {
               outline: none;

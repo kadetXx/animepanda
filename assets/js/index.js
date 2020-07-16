@@ -1,23 +1,31 @@
 //prevent form redirect on submit
 
 $(function() {
-  $('form').submit(function(e) {
+  $('form').unbind().submit(function(e) {
 
     $('#submit').hide();
     $('.loader').show();
 
     e.preventDefault();
+    console.log(document.querySelector('#email').value)
     
       $.ajax({
           type: 'POST',
           url: 'subscribe.php',
           data: $(this).serialize(),
-      }).then(() => {
-        $('.loader').hide();
-        $('#submit').show()
-        document.querySelector('#email').value = '';
-        swal("Opt in successful!", "Your email is now in our waiting list!", "success")
-      });
+          success: () => {
+            $('.loader').hide();
+            $('#submit').show()
+            document.querySelector('#email').value = '';
+            swal("Opt in successful!", "Your email is now in our waiting list!", "success")
+          },
+          error: () => {
+            $('.loader').hide();
+            $('#submit').show()
+            document.querySelector('#email').value = '';
+            swal("Opps an error occured!", "We couldnt process your request, please try again later!", "error")
+          }
+      })
   }); 
 })
 

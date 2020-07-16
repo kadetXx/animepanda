@@ -16,6 +16,7 @@
       &__container {
         margin: 0;
         width: 40px;
+        position: absolute;
 
         .menu-btn__bar {
           &:nth-child(1) {
@@ -47,6 +48,35 @@
           transition: transform .2s ease;
         }
       }
+
+      .devs--active {
+        position: absolute;
+        padding: 0.4rem 1% 0.4rem 0;
+        margin-left: 0;
+        background-color: $light;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+  
+        div {
+
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          
+          h5 {
+            margin: 0 15px 0 5px;
+          }
+
+          i {
+            text-align: center; 
+            font-size: 25px;
+          }
+        }
+      }
+  
     }
 
   }

@@ -21,7 +21,7 @@
     if($mysqli->query($sql) === true){
       echo "Records inserted successfully.";
     } else{
-      echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
+      echo "ERROR: Could not execute $sql. " . $mysqli->error;
     }
  
     // Close connection

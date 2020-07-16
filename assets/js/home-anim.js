@@ -66,7 +66,8 @@ window.addEventListener("scroll", function (e) {
 
 let burger = document.querySelector('.menu-btn__container') 
 burger.addEventListener('click', (e) => {
-  document.querySelector('.menu-btn__container').classList.toggle('menu-btn__container--open')
+  document.querySelector('.menu-btn__container').classList.toggle('menu-btn__container--open');
+  document.querySelector('.devs').classList.toggle('devs--active') 
 })
 
 
@@ -126,10 +127,8 @@ document.querySelector('.footer__button__container button').addEventListener('cl
 
 gsap.from('.hero', {duration:1, delay: 0.6, y:20, ease: 'circ'});
 gsap.from('.hero', {duration:2, delay: 0.6, opacity: 0, ease: 'circ'});
-// gsap.from('label', {duration:1,  transform: "scale(0)", delay: 4, ease: 'circ'})
-gsap.from('label', {duration:1,  y:-100, delay: 2, ease: 'circ'})
-// gsap.from('header', {duration:1, y: -200, opacity: "0", delay: 2, ease: 'back'});
-gsap.from('.scroll', {duration:2,  opacity: 0, delay: 2.1, ease: 'back'})
+gsap.from('label', {duration:1,  y:-100, delay: 1, ease: 'circ'})
+gsap.from('.scroll', {duration:2,  opacity: 0, delay: 2.1, ease: 'back'}) 
 
 //scroll effects
 

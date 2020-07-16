@@ -188,6 +188,7 @@ header .menu-btn__container {
   width: 50px;
   background-color: transparent;
   margin-right: 20%;
+  z-index: 10000;
 }
 
 header .menu-btn__container--open .menu-btn__bar:nth-child(1) {
@@ -224,6 +225,83 @@ header .menu-btn__bar {
 
 header .menu-btn__bar:nth-child(2) {
   width: 50%;
+}
+
+header .menu-btn .devs {
+  display: none;
+}
+
+header .menu-btn .devs--active {
+  position: absolute;
+  padding: 0.4rem 1%;
+  margin-left: 20px;
+  background-color: #FAFAFE;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+}
+
+header .menu-btn .devs--active div {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu-btn .devs--active div h5 {
+  margin: 0 15px 0 5px;
+}
+
+header .menu-btn .devs--active div i {
+  text-align: center;
+  font-size: 35px;
+  color: #413C85;
+}
+
+@-webkit-keyframes view {
+  from {
+    width: 0;
+    opacity: -5;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  to {
+    height: auto;
+    width: 70%;
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes view {
+  from {
+    width: 0;
+    opacity: -5;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  to {
+    height: auto;
+    width: 70%;
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
 .scroll {
@@ -998,6 +1076,7 @@ footer .footer__button__container button .footer__circle i {
   header .menu-btn__container {
     margin: 0;
     width: 40px;
+    position: absolute;
   }
   header .menu-btn__container .menu-btn__bar:nth-child(1) {
     width: 40px;
@@ -1028,6 +1107,41 @@ footer .footer__button__container button .footer__circle i {
     transition: -webkit-transform .2s ease;
     transition: transform .2s ease;
     transition: transform .2s ease, -webkit-transform .2s ease;
+  }
+  header .menu-btn .devs--active {
+    position: absolute;
+    padding: 0.4rem 1% 0.4rem 0;
+    margin-left: 0;
+    background-color: #FAFAFE;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 100;
+  }
+  header .menu-btn .devs--active div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .menu-btn .devs--active div h5 {
+    margin: 0 15px 0 5px;
+  }
+  header .menu-btn .devs--active div i {
+    text-align: center;
+    font-size: 25px;
   }
   .scroll {
     display: none;
