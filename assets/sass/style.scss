@@ -629,19 +629,20 @@ footer {
 
         i {
           font-size: 35px;
-          animation: 0.6s linear 0s 2 running pump;
+          animation: 0.6s linear 0s infinite running pump;
         }
 
         @keyframes pump {
-          0% {
-            transform: translateY(0px);
-          }
 
           25% {
-            transform: translateY(1px);
+            transform: translateY(3px);
           }
 
           50% {
+            transform: translateY(0px);
+          }
+
+          75% {
             transform: translateY(-3px);
           }
 

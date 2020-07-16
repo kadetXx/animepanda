@@ -1016,20 +1016,20 @@ footer .footer__button__container button .footer__circle {
 
 footer .footer__button__container button .footer__circle i {
   font-size: 35px;
-  -webkit-animation: 0.6s linear 0s 2 running pump;
-          animation: 0.6s linear 0s 2 running pump;
+  -webkit-animation: 0.6s linear 0s infinite running pump;
+          animation: 0.6s linear 0s infinite running pump;
 }
 
 @-webkit-keyframes pump {
-  0% {
+  25% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+  50% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
-  25% {
-    -webkit-transform: translateY(1px);
-            transform: translateY(1px);
-  }
-  50% {
+  75% {
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
   }
@@ -1040,15 +1040,15 @@ footer .footer__button__container button .footer__circle i {
 }
 
 @keyframes pump {
-  0% {
+  25% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+  50% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
-  25% {
-    -webkit-transform: translateY(1px);
-            transform: translateY(1px);
-  }
-  50% {
+  75% {
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
   }
@@ -1233,7 +1233,6 @@ footer .footer__button__container button .footer__circle i {
     font-size: 14px;
   }
   footer .footer__button__container button {
-    width: 95%;
     padding: 1.5rem;
   }
   footer .footer__button__container button .footer__circle {
