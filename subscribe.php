@@ -19,7 +19,7 @@
     $sql = "INSERT INTO subscribers (email, deviceType) VALUES ('$email', '$deciveType')";
   
     if($mysqli->query($sql) === true){
-      echo "Records inserted successfully.";
+      echo "Your email is now in our waiting list!";
     } else{
       echo "ERROR: Could not execute $sql. " . $mysqli->error;
     }

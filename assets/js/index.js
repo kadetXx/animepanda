@@ -7,22 +7,22 @@ $(function() {
     $('.loader').show();
 
     e.preventDefault();
-    console.log(document.querySelector('#email').value)
     
       $.ajax({
           type: 'POST',
           url: 'subscribe.php',
           data: $(this).serialize(),
-          success: () => {
+          success: (data) => {
             $('.loader').hide();
             $('#submit').show()
             document.querySelector('#email').value = '';
-            swal("Opt in successful!", "Your email is now in our waiting list!", "success")
+            swal("Opt in successful!", `${data}`, "success")
           },
-          error: () => {
+          error: (err) => {
             $('.loader').hide();
             $('#submit').show()
             document.querySelector('#email').value = '';
+            console.log(err);
             swal("Opps an error occured!", "We couldnt process your request, please try again later!", "error")
           }
       })
