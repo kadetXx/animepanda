@@ -609,6 +609,14 @@ header .menu-btn .devs--active div a i {
   z-index: 3;
 }
 
+#top .hero__social a {
+  color: #383e56;
+}
+
+#top .hero__social a:hover {
+  color: #6754e2;
+}
+
 #top .hero__social i {
   margin: 1rem;
   font-size: 40px;

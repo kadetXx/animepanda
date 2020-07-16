@@ -380,6 +380,13 @@ header {
       justify-content: center;
       margin-top: 1rem;
       z-index: 3;
+
+      a {
+        color: $dark;
+        &:hover {
+          color: $primary-color;
+        }
+      }
   
       i {
         margin: 1rem;
