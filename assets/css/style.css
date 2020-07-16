@@ -1220,6 +1220,7 @@ footer .footer__button__container button .footer__circle i {
   #second .showcase .display .screens .screen__container img {
     width: 90%;
     max-width: 90%;
+    height: 100%;
   }
   footer .footer__container .footer__cta {
     width: 100%;
