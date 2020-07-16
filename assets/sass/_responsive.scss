@@ -151,30 +151,12 @@
           width: 15%;
           margin-top: 2rem;
           display: none;
-  
-          // .tab {
-          //   margin: 1.4rem 0;
-          //   padding: 20px;
-  
-          //   &__sn {
-          //     margin: 0;
-  
-          //     span {
-          //       display: none;
-          //     }
-          //   }
-  
-          //   &__content {
-          //     display: none;
-          //   }
-          // }
         }
 
         .screens {
           width: 60%;
           order: 1;
          
-
           .screen__container {
             justify-content: center;
             align-self: center;
@@ -225,7 +207,7 @@
               justify-content: center;
               width: 40px;
               height: 40px;
-              margin: 16px 7px 0 0;
+              margin: 16px 15px 0 0;
               padding: 10px;
               border-radius: 100%;
               box-shadow: 0 0 7px 0.2px rgba(0, 0, 0, 0.137);
@@ -242,22 +224,6 @@
 
          
         }
-
-        // .tabs--one {
-        //   order: 2;
-        //   min-width: 30%;
-        // }
-
-        // &:nth-child(2) {
-        //   order: 1;
-        // }
-
-        // .tabs--two {
-        //   order: 3;
-        //   min-width: 30%;
-        // }
-  
-
       }
     }
   }

@@ -1,13 +1,20 @@
+// Google fonts
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Piedra&family=Roboto:wght@300;400;500;700;900&family=Sacramento&family=Tangerine:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+// theme colors
+
 $light: #FAFAFE;
 $dark: #383e56;
-$primary-color: #6754e2; //#f69e7b;
+$primary-color: #6754e2;
 
+//set default font
 $default-font: 'Poppins', sans-serif;
 
+// reset css
 
 * {
   box-sizing: border-box;
@@ -15,22 +22,13 @@ $default-font: 'Poppins', sans-serif;
   padding: 0;
 }
 
+// set height and no horizontal scroll
 html body {
   height: auto;
   overflow-x: hidden;
-}
-
-body {
   font-family: $default-font;
-  // -ms-overflow-style: none; 
-  // scrollbar-width: none;  /* Firefox */
-  // overflow-y: -moz-scrollbars-none;
 
-  // &::-webkit-scrollbar { 
-  //   display: none;  /* Safari and Chrome */
-  // }
-
-  /* Change the white to any color ;) */
+  //remove form autofill background color
   input:-webkit-autofill,
   input:-webkit-autofill:hover, 
   input:-webkit-autofill:focus, 
@@ -40,24 +38,30 @@ body {
   } 
 }
 
+
+// customize scrollbar 
+
 ::-webkit-scrollbar {
   width: 7px;
 }
 
-/* Track */
+  // Track 
 ::-webkit-scrollbar-track {
   background: $light; 
 }
  
-/* Handle */
+  // Handle
 ::-webkit-scrollbar-thumb {
   background: #888; 
 }
 
-/* Handle on hover */
+  // Handle hover
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+
+// default p tag styles
 
 p {
   color: #4B505E;
@@ -73,8 +77,6 @@ img {
 }
 
 
-
-
 //set text color function
 
 @function set-text-color($bg) {
@@ -85,19 +87,9 @@ img {
   }
 }
 
-//mixin
+// set text color based on background mixin
 
 @mixin set-background($bg-color) {
   background-color: $bg-color;
   color: set-text-color($bg-color);
-}
-
-//loop
-
-$spacing: (1,2,3,4,5);
-
-@each $space in $spacing {
-  .my-#{$space} {
-    margin: #{$space}rem;
-  }
 }

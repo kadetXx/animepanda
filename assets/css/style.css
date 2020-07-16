@@ -10,17 +10,13 @@
 html body {
   height: auto;
   overflow-x: hidden;
-}
-
-body {
   font-family: "Poppins", sans-serif;
-  /* Change the white to any color ;) */
 }
 
-body input:-webkit-autofill,
-body input:-webkit-autofill:hover,
-body input:-webkit-autofill:focus,
-body input:-webkit-autofill:active {
+html body input:-webkit-autofill,
+html body input:-webkit-autofill:hover,
+html body input:-webkit-autofill:focus,
+html body input:-webkit-autofill:active {
   box-shadow: 0 0 0 30px white inset !important;
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
@@ -29,17 +25,14 @@ body input:-webkit-autofill:active {
   width: 7px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #FAFAFE;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -55,26 +48,6 @@ a {
 img {
   width: 100%;
   max-width: 100%;
-}
-
-.my-1 {
-  margin: 1rem;
-}
-
-.my-2 {
-  margin: 2rem;
-}
-
-.my-3 {
-  margin: 3rem;
-}
-
-.my-4 {
-  margin: 4rem;
-}
-
-.my-5 {
-  margin: 5rem;
 }
 
 .container, header {
@@ -345,22 +318,6 @@ header .menu-btn .devs--active div a i {
 .scroll__btn:hover {
   -webkit-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.24);
           box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.24);
-}
-
-.scroll--light .scroll__btn {
-  background-color: #6754e2;
-}
-
-.scroll--light .scroll__btn--current {
-  background-color: transparent;
-  border: 1px solid #6754e2;
-  -webkit-box-shadow: 0px 0px 2px 3px #d4b5b011;
-          box-shadow: 0px 0px 2px 3px #d4b5b011;
-}
-
-.scroll--light .scroll__btn:hover {
-  -webkit-box-shadow: 0px 0px 2px 3px #d4b5b011;
-          box-shadow: 0px 0px 2px 3px #d4b5b011;
 }
 
 #top {
@@ -1034,16 +991,16 @@ footer .footer__button__container button .footer__circle i {
 
 @-webkit-keyframes pump {
   25% {
-    -webkit-transform: translateY(3px);
-            transform: translateY(3px);
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
   }
   50% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
   75% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
   }
   100% {
     -webkit-transform: translateY(0px);
@@ -1053,16 +1010,16 @@ footer .footer__button__container button .footer__circle i {
 
 @keyframes pump {
   25% {
-    -webkit-transform: translateY(3px);
-            transform: translateY(3px);
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
   }
   50% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
   75% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
   }
   100% {
     -webkit-transform: translateY(0px);
@@ -1288,7 +1245,7 @@ footer .footer__button__container button .footer__circle i {
             justify-content: center;
     width: 40px;
     height: 40px;
-    margin: 16px 7px 0 0;
+    margin: 16px 15px 0 0;
     padding: 10px;
     border-radius: 100%;
     -webkit-box-shadow: 0 0 7px 0.2px rgba(0, 0, 0, 0.137);

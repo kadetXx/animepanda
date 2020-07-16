@@ -1,7 +1,9 @@
+// Import partials
 @import 'config';
 @import 'utilities';
 @import 'buttons';
 
+// header styling start
 
 header {
   @extend .container;
@@ -14,7 +16,8 @@ header {
   margin-top: 18.5px;
   margin-bottom: 6.5px;
   z-index: 1;
-
+  
+  // logo styling
   .logo-container {
     width: 70%;
     display: flex;
@@ -36,6 +39,8 @@ header {
       margin: 0;
     }
   }
+
+  // menu button styling
 
   .menu-btn {
     width: 30%;
@@ -74,6 +79,8 @@ header {
       }
     }
 
+    // menu bars styling start
+
     &__bar {
       height: 2px;
       width: 70%;
@@ -85,6 +92,8 @@ header {
         width: 50%;
       }
     }
+
+    // expanded menu content start
 
     .devs {
       display: none;
@@ -123,7 +132,9 @@ header {
           color: #413C85;
         }
       }
-    }
+    } // expanded menu content end
+
+    // hamburger animation start
 
     @keyframes view {
       from {
@@ -138,12 +149,13 @@ header {
         opacity: 1;
         transform: scaleY(1)
       }
+    } // hamburger animation end
 
-      
-    }
-  }
+  }  // menu bars styling start
 
-}
+} // header styling end
+
+// desktop scroll buttons styling start
 
 .scroll {
   position: fixed;
@@ -173,23 +185,10 @@ header {
       box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.24);
     }
   }
-}
+} // desktop scroll buttons styling end
 
-.scroll--light {
-  .scroll__btn {
-    background-color: $primary-color;
 
-    &--current {
-      background-color: transparent;
-      border: 1px solid $primary-color;
-      box-shadow: 0px 0px 2px 3px #d4b5b011;
-    }
-
-    &:hover {
-      box-shadow: 0px 0px 2px 3px #d4b5b011;
-    }
-  }
-}
+// form hero section styling
 
 #top {
   @include set-background($light);
@@ -374,7 +373,7 @@ header {
       }
     }
 
-
+    // social icon styling
   
     &__social {
       display: flex;
@@ -396,7 +395,10 @@ header {
       }
     }
   }
-}
+} // form hero section styling
+
+
+// app mockup display section start
 
 #second {
   @include set-background(#fff);
@@ -540,7 +542,9 @@ header {
 
     }
   }
-}
+} // app display section start
+
+// footer styling
 
 footer {
   display: flex;
@@ -649,7 +653,7 @@ footer {
         @keyframes pump {
 
           25% {
-            transform: translateY(3px);
+            transform: translateY(1px);
           }
 
           50% {
@@ -657,7 +661,7 @@ footer {
           }
 
           75% {
-            transform: translateY(-3px);
+            transform: translateY(-1px);
           }
 
           100% {
@@ -667,8 +671,8 @@ footer {
       }
     }
   }
-}
+} // footer styling
 
-// responsive styling
+// responsive styling import
 
 @import 'responsive';
