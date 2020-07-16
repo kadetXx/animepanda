@@ -3,10 +3,11 @@
 $(function() {
   $('form').submit(function(e) {
 
-    $('#submit').hide()
-    $('.loader').show()
+    $('#submit').hide();
+    $('.loader').show();
 
-    e.preventDefault()
+    e.preventDefault();
+    
       $.ajax({
           type: 'POST',
           url: 'subscribe.php',
