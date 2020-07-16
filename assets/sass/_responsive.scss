@@ -174,12 +174,18 @@
         }
       }
     }
-  }
 
-  &__button__container {
-    button {
-      width: 95%;
-      padding: 1.5rem;
+    .footer__button__container {
+      button {
+        width: 95%;
+        padding: 1.5rem;
+  
+        .footer__circle {
+          right: 0.8rem;
+          height: 3.5rem;
+          width: 3.5rem;
+        }
+      }
     }
   }
 }

@@ -140,7 +140,7 @@ gsap.from(".tab-left", {
     trigger: ".tab",
     toggleActions: "restart none none none"
   },
-  x: -100,
+  x: -300,
   duration: 2,
   stagger: Math.random()
 });
@@ -150,7 +150,7 @@ gsap.from(".tab-right", {
     trigger: ".tab",
     toggleActions: "restart none none none"
   },
-  x: 100,
+  x: 300,
   duration: 2,
   stagger: Math.random()
 });

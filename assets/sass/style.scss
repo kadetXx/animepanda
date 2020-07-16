@@ -365,30 +365,6 @@ header {
       }
     }
   }
-
-  .hero__image {
-    &:hover {
-      animation: 2s linear 0s infinite running halo;
-    }
-
-    @keyframes halo {
-      25% {
-        transform: translateY(-3px);
-      }
-
-      50% {
-        transform: translateY(3px);
-      }
-
-      75% {
-        transform: translateY(6px);
-      }
-
-      100% {
-        transform: translateY(0);
-      }
-    }
-  }
 }
 
 #second {
@@ -400,6 +376,7 @@ header {
     align-items: center;
     justify-content: space-between;;
     height: 100%;
+    overflow-x: hidden;
 
     &__header {
       display: flex;
@@ -616,7 +593,7 @@ footer {
       .footer__circle {
         width: 4rem;
         height: 4rem;
-        right: 2rem;
+        right: 0.8rem;
         position: absolute;
         background-color: #413C85;
         border-radius: 50%;

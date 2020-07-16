@@ -9,6 +9,7 @@
 
 html body {
   height: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -584,49 +585,6 @@ header .menu-btn__bar:nth-child(2) {
           transform: rotate(-10deg);
 }
 
-#top .hero__image:hover {
-  -webkit-animation: 2s linear 0s infinite running halo;
-          animation: 2s linear 0s infinite running halo;
-}
-
-@-webkit-keyframes halo {
-  25% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-  }
-  50% {
-    -webkit-transform: translateY(3px);
-            transform: translateY(3px);
-  }
-  75% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes halo {
-  25% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-  }
-  50% {
-    -webkit-transform: translateY(3px);
-            transform: translateY(3px);
-  }
-  75% {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 #second {
   background-color: #fff;
   color: #383e56;
@@ -647,6 +605,7 @@ header .menu-btn__bar:nth-child(2) {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  overflow-x: hidden;
 }
 
 #second .showcase__header {
@@ -960,7 +919,7 @@ footer .footer__button__container button p {
 footer .footer__button__container button .footer__circle {
   width: 4rem;
   height: 4rem;
-  right: 2rem;
+  right: 0.8rem;
   position: absolute;
   background-color: #413C85;
   border-radius: 50%;
@@ -1159,8 +1118,13 @@ footer .footer__button__container button .footer__circle i {
   footer .footer__container .footer__cta .footer__header p {
     font-size: 14px;
   }
-  __button__container button {
+  footer .footer__button__container button {
     width: 95%;
     padding: 1.5rem;
+  }
+  footer .footer__button__container button .footer__circle {
+    right: 0.8rem;
+    height: 3.5rem;
+    width: 3.5rem;
   }
 }
