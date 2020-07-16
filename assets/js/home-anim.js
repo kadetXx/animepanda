@@ -152,6 +152,14 @@ navi.forEach((btn, index) => btn.addEventListener('click', () => {
     gsap.to('.screen', {duration:0.7, delay: 0, x:7, ease: 'slow'});
     gsap.to('.screen', {duration:0.7, delay: 0.7, x:0, ease: 'slow'});
 
+    //remove active from all progreess indicators
+    document.querySelectorAll('.mobile-progress i').forEach((item) => {
+      item.classList.remove('active');
+    });
+
+    //add active text class to current progress
+    document.querySelectorAll('.mobile-progress i')[i].classList.add('active');
+
   } else if (index == 0 && i > 0 && i <= 5) { //checked if arrow is left
 
     //decrease i
@@ -171,6 +179,14 @@ navi.forEach((btn, index) => btn.addEventListener('click', () => {
 
     gsap.to('.screen', {duration:0.7, delay: 0, x:-4, ease: 'slow'});
     gsap.to('.screen', {duration:0.7, delay: 0.7, x:0, ease: 'slow'});
+
+    //remove active from all progreess indicators
+    document.querySelectorAll('.mobile-progress i').forEach((item) => {
+      item.classList.remove('active');
+    });
+
+    //add active text class to current progress
+    document.querySelectorAll('.mobile-progress i')[i].classList.add('active');
   }
 }));
 

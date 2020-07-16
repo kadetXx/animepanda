@@ -121,6 +121,23 @@
   #second {
     background-color: #fff;
     padding: 10% 7%;
+
+    .mobile-progress {
+      display: flex;
+      justify-content: center;
+
+      i {
+        margin: 5px;
+        opacity: 0.2;
+        font-size: 10px;
+      }
+
+      i.active {
+        color: $primary-color;
+        font-size: 12px;
+        opacity: 1;
+      }
+    }
   
     .showcase {
       

@@ -557,7 +557,11 @@ header {
 
     }
   }
-} // app display section start
+
+  .mobile-progress {
+    display: none;
+  }
+} // app display section end
 
 // footer styling
 
