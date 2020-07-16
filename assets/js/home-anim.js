@@ -95,16 +95,17 @@ tabs.forEach((tab, index) => {
     tabs[index].classList.add('tab--active');
 
     let images = [
-      'sign-up.png',
-      'create-story.png',
-      'select-avatar.png',
-      'dashboard.png',
-      'detail.png',
-      'rendering.png'
+      'sign-up',
+      'create-story',
+      'select-avatar',
+      'dashboard',
+      'detail',
+      'rendering'
     ];
 
     //switch images per tab change
-    document.querySelector('.screen').setAttribute('src', `assets/img/${images[index]}`)
+    document.querySelector('.screen').setAttribute('src', `assets/img/${images[index]}.png`);
+    document.querySelector('.pop').setAttribute('href', `assets/img/${images[index]}_cropped.png`);
  
     //animate image switch
     gsap.to('.screen', {duration:0.7, delay: 0, y:10, ease: 'slow'});
@@ -121,12 +122,12 @@ let i = 0;
 navi.forEach((btn, index) => btn.addEventListener('click', () => {
 
   let images = [
-    'sign-up.png',
-    'create-story.png',
-    'select-avatar.png',
-    'rendering.png',
-    'detail.png',
-    'dashboard.png',
+    'sign-up',
+    'create-story',
+    'select-avatar',
+    'rendering',
+    'detail',
+    'dashboard',
   ];
 
   //check if arrow button is arrow right
@@ -136,7 +137,8 @@ navi.forEach((btn, index) => btn.addEventListener('click', () => {
     i++;
 
     //collect current image from image array
-    document.querySelector('.screen').setAttribute('src', `assets/img/${images[i]}`);
+    document.querySelector('.screen').setAttribute('src', `assets/img/${images[i]}.png`);
+    document.querySelector('.pop').setAttribute('href', `assets/img/${images[i]}_cropped.png`);
 
     //remove active text class from all tabs
     document.querySelectorAll('.mobile-tab__text').forEach((item) => {
@@ -156,7 +158,8 @@ navi.forEach((btn, index) => btn.addEventListener('click', () => {
     i--;
 
     //collect current image from image array
-    document.querySelector('.screen').setAttribute('src', `assets/img/${images[i]}`);
+    document.querySelector('.screen').setAttribute('src', `assets/img/${images[i]}.png`);
+    document.querySelector('.pop').setAttribute('href', `assets/img/${images[i]}_cropped.png`);
 
     //remove active tab class from all tabs
     document.querySelectorAll('.mobile-tab__text').forEach((item) => {
@@ -170,8 +173,6 @@ navi.forEach((btn, index) => btn.addEventListener('click', () => {
     gsap.to('.screen', {duration:0.7, delay: 0.7, x:0, ease: 'slow'});
   }
 }));
-
-
 
 //footer button scroll to input function
 
@@ -192,29 +193,11 @@ gsap.from('label', {duration:1,  y:-100, delay: 1, ease: 'circ'})
 //desktop scrollbars fade in
 gsap.from('.scroll', {duration:2,  opacity: 0, delay: 2.1, ease: 'back'}) 
 
-//animate tabs slide in on scroll
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.from(".tab-left", {
-//   scrollTrigger: {
-//     trigger: ".tab",
-//     toggleActions: "restart none none none"
-//   },
-//   x: -300,
-//   duration: 2,
-//   stagger: Math.random()
-// });
-
-// gsap.from(".tab-right", {
-//   scrollTrigger: {
-//     trigger: ".tab",
-//     toggleActions: "restart none none none"
-//   },
-//   x: 300,
-//   duration: 2,
-//   stagger: Math.random()
-// });
-
-
 //AOS
 AOS.init();
+
+//magnificient
+$('.pop').magnificPopup({
+  type: 'image'
+  // other options
+});

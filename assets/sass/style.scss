@@ -524,9 +524,15 @@ header {
           display: flex;
           justify-content: center;
 
+          a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
           img {
-            width: 60%;
-            max-width: 60%;
+            width: 70%;
+            max-width: 70%;
             position: relative;
             right: -17px;
           }

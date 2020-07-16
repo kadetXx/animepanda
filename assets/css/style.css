@@ -817,9 +817,19 @@ header .menu-btn .devs--active div a i {
           justify-content: center;
 }
 
+#second .showcase .display .screens .screen__container a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #second .showcase .display .screens .screen__container img {
-  width: 60%;
-  max-width: 60%;
+  width: 70%;
+  max-width: 70%;
   position: relative;
   right: -17px;
 }
