@@ -249,7 +249,7 @@ header .menu-btn .devs--active {
   z-index: 100;
 }
 
-header .menu-btn .devs--active div {
+header .menu-btn .devs--active div a {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,11 +262,15 @@ header .menu-btn .devs--active div {
           align-items: center;
 }
 
-header .menu-btn .devs--active div h5 {
+header .menu-btn .devs--active div a:hover i {
+  color: #6754e2 !important;
+}
+
+header .menu-btn .devs--active div a h5 {
   margin: 0 15px 0 5px;
 }
 
-header .menu-btn .devs--active div i {
+header .menu-btn .devs--active div a i {
   text-align: center;
   font-size: 35px;
   color: #413C85;
@@ -1125,7 +1129,7 @@ footer .footer__button__container button .footer__circle i {
             align-items: center;
     z-index: 100;
   }
-  header .menu-btn .devs--active div {
+  header .menu-btn .devs--active div a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1136,10 +1140,10 @@ footer .footer__button__container button .footer__circle i {
         -ms-flex-align: center;
             align-items: center;
   }
-  header .menu-btn .devs--active div h5 {
+  header .menu-btn .devs--active div a h5 {
     margin: 0 15px 0 5px;
   }
-  header .menu-btn .devs--active div i {
+  header .menu-btn .devs--active div a i {
     text-align: center;
     font-size: 25px;
   }

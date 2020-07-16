@@ -101,11 +101,17 @@ header {
       align-items: center;
       z-index: 100;
 
-      div {
+      div a {
         text-align: center;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &:hover {
+          i {
+            color: $primary-color !important;
+          } 
+        }
 
         h5 {
           margin: 0 15px 0 5px;
