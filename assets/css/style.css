@@ -830,6 +830,7 @@ header .menu-btn .devs--active div a i {
 #second .showcase .display .screens .screen__container img {
   width: 70%;
   max-width: 70%;
+  height: 100%;
   position: relative;
   right: -17px;
 }
@@ -1186,6 +1187,7 @@ footer .footer__button__container button .footer__circle i {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    height: 100%;
   }
   #second .showcase .display .screens .screen__container {
     -webkit-box-pack: center;
