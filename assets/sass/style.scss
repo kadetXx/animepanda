@@ -530,6 +530,14 @@ header {
         }
       }
 
+      .mobile-tab {
+        display: none;
+
+        &__text {
+          display: none;
+        }
+      }
+
     }
   }
 }

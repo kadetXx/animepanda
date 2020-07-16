@@ -114,6 +114,60 @@ tabs.forEach((tab, index) => {
   })
 })
 
+//mobile tabs
+
+let navi = document.querySelectorAll('.mobile__tab__nav');
+let i = 0;
+
+navi.forEach((btn, index) => btn.addEventListener('click', () => {
+
+  let images = [
+    'sign-up.png',
+    'create-story.png',
+    'select-avatar.png',
+    'rendering.png',
+    'dashboard.png',
+    'detail.png',
+  ];
+
+  if (index == 1 && i >= 0 && i < 5) {
+
+    i++;
+
+    document.querySelector('.screen').setAttribute('src', `assets/img/${images[i]}`);
+
+    document.querySelectorAll('.mobile-tab__text').forEach((item) => {
+      item.classList.remove('mobile-tab__text--active');
+    });
+
+    document.querySelectorAll('.mobile-tab__text')[i].classList.add('mobile-tab__text--active');
+    
+    gsap.to('.screen', {duration:0.7, delay: 0, x:7, ease: 'slow'});
+    gsap.to('.screen', {duration:0.7, delay: 0.7, x:0, ease: 'slow'});
+
+  } else if (index == 0 && i > 0 && i <= 5) {
+
+    document.querySelectorAll('.mobile-tab__text').forEach((item) => {
+      item.classList.remove('mobile-tab__text--active');
+    })
+    document.querySelectorAll('.tab')[index].classList.add('mobile-tab__text--active');
+
+    i--;
+
+    document.querySelector('.screen').setAttribute('src', `assets/img/${images[i]}`)
+
+    document.querySelector('.screen').setAttribute('src', `assets/img/${images[i]}`);
+
+    document.querySelectorAll('.mobile-tab__text').forEach((item) => {
+      item.classList.remove('mobile-tab__text--active');
+    })
+    document.querySelectorAll('.mobile-tab__text')[i].classList.add('mobile-tab__text--active');
+
+    gsap.to('.screen', {duration:0.7, delay: 0, x:-4, ease: 'slow'});
+    gsap.to('.screen', {duration:0.7, delay: 0.7, x:0, ease: 'slow'});
+  }
+}));
+
 
 
 //footer 
