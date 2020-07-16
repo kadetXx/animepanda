@@ -645,6 +645,7 @@ header .menu-btn .devs--active div a i {
           justify-content: space-between;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #second .showcase__header {

@@ -193,24 +193,28 @@ gsap.from('label', {duration:1,  y:-100, delay: 1, ease: 'circ'})
 gsap.from('.scroll', {duration:2,  opacity: 0, delay: 2.1, ease: 'back'}) 
 
 //animate tabs slide in on scroll
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".tab-left", {
-  scrollTrigger: {
-    trigger: ".tab",
-    toggleActions: "restart none none none"
-  },
-  x: -300,
-  duration: 2,
-  stagger: Math.random()
-});
+// gsap.from(".tab-left", {
+//   scrollTrigger: {
+//     trigger: ".tab",
+//     toggleActions: "restart none none none"
+//   },
+//   x: -300,
+//   duration: 2,
+//   stagger: Math.random()
+// });
 
-gsap.from(".tab-right", {
-  scrollTrigger: {
-    trigger: ".tab",
-    toggleActions: "restart none none none"
-  },
-  x: 300,
-  duration: 2,
-  stagger: Math.random()
-});
+// gsap.from(".tab-right", {
+//   scrollTrigger: {
+//     trigger: ".tab",
+//     toggleActions: "restart none none none"
+//   },
+//   x: 300,
+//   duration: 2,
+//   stagger: Math.random()
+// });
+
+
+//AOS
+AOS.init();
