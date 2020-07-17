@@ -841,6 +841,8 @@ header .menu-btn .devs--active div a i {
   height: 100%;
   position: relative;
   right: -17px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 #second .showcase .display .mobile-tab {
