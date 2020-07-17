@@ -23,10 +23,13 @@ $(function() {
             $('.loader').hide();
             $('#submit').show()
 
-            //reset email input value
-            document.querySelector('#email').value = '';
-            //display success alert with message from php echo
-            swal("Opt in successful!", `${data}`, "success")
+            setTimeout(() => {
+              //reset email input value
+              document.querySelector('#email').value = '';
+              //display success alert with message from php echo
+              swal("Opt in successful!", `${data}`, "success")
+            }, 1000);
+            
           },
           error: (err) => {
 
