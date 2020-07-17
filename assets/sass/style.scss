@@ -32,7 +32,7 @@ header {
     color: $dark;
   
     &:hover {
-      color: $primary-color
+      color: $secondary-color
     }
 
     h2 {
@@ -129,7 +129,7 @@ header {
         i {
           text-align: center; 
           font-size: 35px;
-          color: #413C85;
+          color: $secondary-color;
         }
       }
     } // expanded menu content end
@@ -574,7 +574,7 @@ footer {
   background: #f6f6f8;
   color: $dark;
   padding: 5% 0 0;
-  // box-shadow: inset 0 -95px 3px 0 #413C85;
+  // box-shadow: inset 0 -95px 3px 0 $secondary-color;
 
   .footer__container {
     display: flex;
@@ -658,7 +658,7 @@ footer {
         height: 4rem;
         right: 0.8rem;
         position: absolute;
-        background-color: #413C85;
+        background-color: $secondary-color;
         border-radius: 50%;
         align-self: center;
         display: flex;

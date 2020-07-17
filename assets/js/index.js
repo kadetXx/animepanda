@@ -19,11 +19,10 @@ $(function() {
           data: $(this).serialize(),
           success: (data) => {
 
-            //hide button loader on successful request
-            $('.loader').hide();
-            $('#submit').show()
-
             setTimeout(() => {
+              //hide button loader on successful request
+              $('.loader').hide();
+              $('#submit').show()
               //reset email input value
               document.querySelector('#email').value = '';
               //display success alert with message from php echo
@@ -32,17 +31,18 @@ $(function() {
             
           },
           error: (err) => {
+            setTimeout(() => {
+              //hide loader 
+              $('.loader').hide();
+              $('#submit').show()
+              document.querySelector('#email').value = '';
 
-            //hide loader 
-            $('.loader').hide();
-            $('#submit').show()
-            document.querySelector('#email').value = '';
+              //log php error message on console
+              console.log(err);
 
-            //log php error message on console
-            console.log(err);
-
-            //display error alert
-            swal("Opps an error occured!", "We couldnt process your request, please try again later!", "error")
+              //display error alert
+              swal("Opps an error occured!", "We couldnt process your request, please try again later!", "error")
+            }, 1000);
           }
       })
   }); 
