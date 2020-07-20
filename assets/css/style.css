@@ -665,8 +665,8 @@ header .menu-btn .devs--active div a i {
   bottom: 440px;
   right: 250px;
   background-color: #937BCF;
-  -webkit-animation: 4s linear 0s infinite rotate;
-          animation: 4s linear 0s infinite rotate;
+  -webkit-animation: 6s linear 0s infinite rotate;
+          animation: 6s linear 0s infinite rotate;
 }
 
 #top > div:nth-child(6) {
@@ -675,6 +675,8 @@ header .menu-btn .devs--active div a i {
   bottom: 700px;
   right: 150px;
   background-color: #FDD866;
+  -webkit-animation: 3s linear 0s infinite glow;
+          animation: 3s linear 0s infinite glow;
 }
 
 #top > div:nth-child(7) {
@@ -755,38 +757,30 @@ header .menu-btn .devs--active div a i {
 
 @-webkit-keyframes rotate {
   25% {
-    bottom: 445px;
-    right: 245px;
-  }
-  50% {
-    bottom: 440px;
     right: 240px;
   }
+  50% {
+    right: 250px;
+  }
   75% {
-    bottom: 430px;
-    right: 245px;
+    right: 230px;
   }
   100% {
-    bottom: 440px;
     right: 250px;
   }
 }
 
 @keyframes rotate {
   25% {
-    bottom: 445px;
-    right: 245px;
-  }
-  50% {
-    bottom: 440px;
     right: 240px;
   }
+  50% {
+    right: 250px;
+  }
   75% {
-    bottom: 430px;
-    right: 245px;
+    right: 230px;
   }
   100% {
-    bottom: 440px;
     right: 250px;
   }
 }
