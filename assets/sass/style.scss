@@ -402,6 +402,108 @@ header {
       }
     }
   }
+
+  .bubble {
+    @extend %bubble;
+  }
+
+  & > div:nth-child(3) {
+    transform: scale(1.3);
+    bottom: 410px; 
+    left: 250px;
+    background-color: #FF7654;
+    animation: 5s linear 0s infinite glow;
+  }
+
+  & > div:nth-child(4) {
+    transform: scale(3.0);   
+    bottom: 650px;
+    left: 120px; 
+    background-color: $secondary-color;
+    animation: 7s linear 0s infinite bounce;
+  }
+
+  & > div:nth-child(5) {
+    transform: scale(2.4);
+    bottom: 440px;
+    right: 250px;
+    background-color: #937BCF;
+    animation: 4s linear 0s infinite rotate;
+  }
+
+  & > div:nth-child(6) {
+    transform: scale(1.5);
+    bottom: 700px;
+    right: 150px; 
+    background-color: #FDD866;
+    
+  }
+
+  & > div:nth-child(7) {
+    transform: scale(1.6);
+    bottom: 820px;
+    left: 560px; 
+    background-color: #57DFEC; 
+  }
+
+  @keyframes glow {
+    25% {
+      transform: scale(1.8);
+    }
+
+    50% {
+      transform: scale(2.2);
+    }
+
+    75% {
+      transform: scale(1.6);
+    }
+
+    100% {
+      transform: scale(1.3);
+    }
+  }
+
+  @keyframes bounce {
+    25% {
+      bottom: 630px;
+    }
+
+    50% {
+      bottom: 610px;
+    }
+
+    75% {
+      bottom: 630px;
+    }
+
+    100% {
+      bottom: 650px;
+    }
+  }
+
+  @keyframes rotate {
+    25% {
+      bottom: 445px;
+      right: 245px;
+    }
+
+    50% {
+      bottom: 440px;
+      right: 240px;
+    }
+
+    75% {
+      bottom: 430px;
+      right: 245px;
+    }
+
+    100% {
+      bottom: 440px;
+      right: 250px;
+    }
+  }
+
 } // form hero section styling
 
 
